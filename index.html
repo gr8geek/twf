@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TWF task</title>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+
+    <nav style="position:fixed;">
+      <div class="nav-wrapper blue">
+        <a href="#" class="brand-logo">TWF Task</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li id="login"class="out"><a href="#">Log in</a></li>
+          <li id="sign"class="out"><a href="#">Sign Up</a></li>
+          <li id="logout"class="in"><a href="#">Log Out</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br><br>
+    <div class="out row ">
+      <form id="signupform"style="margin-left: 4%;"class="col s10 signup hide">
+        <h1>Sign Up</h1>
+        <div class="row">
+          <!--<div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        -->
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="semail" type="email" class="validate">
+            <label for="semail">Email</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="spassword" type="password" class="validate">
+            <label for="spassword">Password</label>
+          </div>
+        </div>
+        <button class="btn green" type="btn green submit">Submit</button>
+      </form>
+
+      <form id="loginform"style="margin-left: 4%;" class="col s10 login">
+        <h1>Login</h1>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <button class="btn green"type="submit">Submit</button>
+      </form>
+
+    </div>
+    <div style="align-items:center; margin-left: 20%;"class="in">
+    </div>
+    <div class = "in" id="detail">
+    </div>
+
+    <script src = "script.js">
+    </script>
+  </body>
+</html>
